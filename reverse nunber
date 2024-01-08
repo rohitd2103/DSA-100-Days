@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class prac {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       int num = sc.nextInt();
+       int i = 0;
+       int rev = 0;
+       while(num>0){
+        int last_digit = num%10;
+        rev = (rev*10) + last_digit;
+         num/=10;
+        i++;
+       }
+       System.out.println(rev);
+
+
+    }
+
+}
